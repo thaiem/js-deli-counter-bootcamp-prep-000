@@ -23,4 +23,5 @@ function currentLine(line) {
       ans += `${i+1}. ${line[i]}`
     }
   }
+  return ans;
 }
