@@ -17,9 +17,10 @@ function currentLine(line) {
   } else {
     var ans = "The line is currently: ";
     for (let i = 0; i < line.length; i++) {
-      if (i === 0 ) {
-        ans += `${i+1}. ${line[i]}`
+      if (i > 0 ) {
+        ans += ", "
       }
+      ans += `${i+1}. ${line[i]}`
     }
   }
 }
